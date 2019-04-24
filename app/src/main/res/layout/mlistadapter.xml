@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/play_list"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/track_image"
+            android:layout_width="50dip"
+            android:scaleType="fitXY"
+            android:layout_height="50dip"
+            android:src="@drawable/b"/>
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="60dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/track_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Rihanna Love the way lie"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/songcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="5 songs"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/track_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_alignTop="@+id/thumbnail"-->
+        <!--android:layout_toRightOf="@+id/thumbnail"-->
+        <!--android:text="Rihanna Love the way lie"-->
+        <!--android:textColor="#040404"-->
+        <!--android:typeface="sans"-->
+        <!--android:textSize="15dip"-->
+        <!--android:textStyle="bold"/>-->
+    <!--<ImageView android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:id="@+id/download"-->
+        <!--android:src="@drawable/downloadblack"-->
+        <!--android:layout_marginRight="50dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"/>-->
+    <!-- Rightend Arrow -->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:src="@drawable/allsong"
+        android:id="@+id/menu"
+        android:scaleType="fitXY"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_height="30dp" />
+</RelativeLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main_audio_view"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:gravity="center"
+        android:id="@+id/list_empty2"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="32.0dip"
+            android:paddingRight="32.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="130dip"
+                android:layout_height="130dip"
+                android:src="@drawable/oops"
+                android:layout_weight="1.0" />
+
+            <TextView
+
+                android:textSize="17.0sp"
+                android:textColor="#ff565656"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Data Found"
+                android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                style="@style/textMediumWhite" />
+            <TextView
+                android:textSize="17.0sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" No Internet Connection"
+                style="@style/textMediumWhite" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:gravity="center"
+        android:id="@+id/list_empty"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="32.0dip"
+            android:paddingRight="32.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="130dip"
+                android:layout_height="130dip"
+                android:src="@drawable/oops"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@+id/textRefreash"
+                android:textSize="17.0sp"
+                android:textColor="#ff565656"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Data Found"
+                android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                style="@style/textMediumWhite" />
+            <TextView
+                android:textSize="17.0sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:id="@+id/openlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login Required Click here"
+                android:drawableLeft="@drawable/usericon"
+                style="@style/textMediumWhite" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/profile"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:background="#56d8dcdf"
+
+            android:id="@+id/imageView" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="User Details"
+        android:gravity="center"
+        android:id="@+id/listtitle"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="#333333"
+        android:id="@+id/play"
+        android:gravity="start|center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/selected_track_image"
+            android:layout_width="80dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="60dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/selected_track_title"
+                android:paddingLeft="8dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="Tanu weds mannu      "
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/player_control"
+                android:layout_toEndOf="@+id/selected_track_title"
+                android:layout_width="match_parent"
+                android:src="@drawable/bigpauses"
+                android:layout_marginRight="15dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/selected_track_title" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:text="Name"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:layout_column="2"
+                tools:targetApi="jelly_bean_mr1" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Email "
+                android:textColor="@color/colorPrimary"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Mobile No."
+                android:textColor="@color/colorPrimary"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/mob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+        </TableRow>
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Date of Birth"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Current Plan "
+                android:textColor="@color/colorPrimary"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Created Date "
+                android:textColor="@color/colorPrimary"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/cdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_column="1"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_orange"
+        android:text="UPGRADE Plan "
+        android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

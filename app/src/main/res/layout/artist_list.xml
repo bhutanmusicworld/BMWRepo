@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+
+
+
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <!--<LinearLayout android:id="@+id/thumbnail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="3dip"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:background="@drawable/image_bg"-->
+        <!--android:layout_marginRight="5dip">-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/track_image"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="50dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="fitXY"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="50dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/b"/>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/track_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <!-- Artist Name -->
+    <!--<TextView-->
+    <!--android:id="@+id/Artist"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/track_title"-->
+    <!--android:textColor="#343434"-->
+    <!--android:textSize="10dip"-->
+    <!--android:layout_marginTop="1dip"-->
+    <!--android:layout_toRightOf="@+id/thumbnail"-->
+    <!--android:text="Just gona stand there and ..." />-->
+
+    <!-- Rightend Duration -->
+    <!--<TextView-->
+        <!--android:id="@+id/duration"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignTop="@id/track_title"-->
+        <!--android:gravity="right"-->
+        <!--android:text="5:45"-->
+        <!--android:layout_marginRight="5dip"-->
+        <!--android:textSize="10dip"-->
+        <!--android:textColor="#10bcc9"-->
+        <!--android:textStyle="bold"/>-->
+    <!--<ImageView android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/download"-->
+        <!--android:src="@drawable/done"-->
+        <!--android:layout_marginRight="50dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"/>-->
+    <!--&lt;!&ndash; Rightend Arrow &ndash;&gt;-->
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:src="@drawable/navimenu"-->
+        <!--android:id="@+id/menu"-->
+        <!--android:background="@null"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_height="wrap_content" />-->
+</RelativeLayout>

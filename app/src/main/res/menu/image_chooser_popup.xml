@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Add To Playlist"
+        android:titleCondensed="camera"
+        android:id="@+id/add"
+        android:visible="true"
+        />
+    <item
+        android:title="Song Info"
+        android:id="@+id/info"
+        android:titleCondensed="string"
+        android:visible="true"
+        />
+</menu>
+
+<!--<item-->
+<!--android:title="Add To Playlist"-->
+<!--android:titleCondensed="camera"-->
+<!--android:id="@+id/add"-->
+<!--android:onClick="showChangeLangDialog"-->
+<!--android:visible="true"-->
+    <!--/>-->
+<!--<item-->
+<!--android:title="Song Info"-->
+<!--android:id="@+id/info"-->
+<!--android:onClick="openSongInfo"-->
+<!--android:titleCondensed="string"-->
+<!--android:visible="true"-->
+    <!--/>-->

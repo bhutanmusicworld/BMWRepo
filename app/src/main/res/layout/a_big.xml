@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/padding"
+    android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/head"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+                  <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                   android:id="@+id/logo"
+                    android:src="@drawable/final_logo"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Title"
+                   android:id="@+id/title"
+                    android:padding="@dimen/padding_5"
+                    android:textSize="20sp"
+                    android:textColor="@color/md_black_1000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/final_logo"
+                android:id="@+id/big_img"
+                android:layout_height="180dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                android:id="@+id/description"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/md_black_1000"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <!--  User Id  Label -->
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/head"
+        android:orientation="horizontal">
+
+        <!--  Login Button Label -->
+        <Button
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Close"
+            android:drawableRight="@drawable/ic_close_white"
+            android:layout_weight="1"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/genre"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_yellow"
+            android:textAllCaps="false"
+            />
+        <!--  Login Button Label -->
+        <Button
+            android:id="@+id/install"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/download"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:layout_weight="1"
+            android:text="Install"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/rounded_yellow"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/install2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/download"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:layout_weight="1"
+            android:text="Install"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/rounded_yellow"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

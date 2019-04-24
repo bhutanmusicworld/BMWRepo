@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:background="@color/feed_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_above="@+id/add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:gravity="center"
+        android:id="@+id/list_empty"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="32.0dip"
+            android:paddingRight="32.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="130dip"
+                android:layout_height="130dip"
+                android:src="@drawable/oops"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@+id/textRefreash"
+                android:textSize="17.0sp"
+                android:textColor="#ff565656"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Data Found"
+                android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                style="@style/textMediumWhite" />
+            <TextView
+                android:textSize="17.0sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:id="@+id/openlogin"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login Required Click here"
+                android:drawableLeft="@drawable/usericon"
+                style="@style/textMediumWhite" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/profile"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:background="#56d8dcdf"
+
+            android:id="@+id/imageView" />
+    </RelativeLayout>
+    <FrameLayout
+        android:gravity="center"
+        android:id="@+id/list_empty2"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="32.0dip"
+            android:paddingRight="32.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="130dip"
+                android:layout_height="130dip"
+                android:src="@drawable/oops"
+                android:layout_weight="1.0" />
+
+            <TextView
+
+                android:textSize="17.0sp"
+                android:textColor="#ff565656"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Data Found"
+                android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                style="@style/textMediumWhite" />
+            <TextView
+                android:textSize="17.0sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Please Create your PlayList"
+                android:drawableLeft="@drawable/playlist"
+                style="@style/textMediumWhite" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:gravity="center"
+        android:id="@+id/list_empty3"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="32.0dip"
+            android:paddingRight="32.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="130dip"
+                android:layout_height="130dip"
+                android:src="@drawable/oops"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:textSize="17.0sp"
+                android:textColor="#ff565656"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Data Found"
+                android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                style="@style/textMediumWhite" />
+            <TextView
+                android:textSize="17.0sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="20.0dip"
+                android:paddingBottom="20.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" No Internet Connection"
+                style="@style/textMediumWhite" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ListView
+            android:id="@+id/mylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+        </ListView>
+
+    </RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/add"
+        android:layout_alignParentBottom="true"
+        android:layout_height="80dp">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/add_logo"
+            android:layout_weight="1"
+            android:src="@drawable/final_logo"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Title"
+                android:id="@+id/add_title"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/md_black_1000"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_description"
+                android:maxLines="2"
+                android:padding="@dimen/padding_5"
+                android:textSize="14sp"
+                android:textColor="@color/md_black_1000"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:src="@drawable/download2"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:tint="@color/white"
+            android:background="@color/green"
+            android:id="@+id/install2"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="100dp"
+            android:src="@drawable/download2"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:id="@+id/install"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</RelativeLayout>

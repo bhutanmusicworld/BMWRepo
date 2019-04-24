@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BMusic World</string>
+    <string name="facebook_app_id">508824759541688</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="msg_sit_back">Sit back &amp; Relax! while we verify your mobile number</string>
+    <string name="msg_manual_otp">(Enter the OTP below in case if we fail to detect the SMS automatically)</string>
+    <string name="lbl_enter_otp">Enter OTP</string>
+    <!--custum_navigation_drawer-->
+</resources>

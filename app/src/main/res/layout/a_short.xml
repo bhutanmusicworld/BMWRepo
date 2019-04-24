@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="80dp"
+
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/logo"
+                android:layout_weight="1"
+                android:src="@drawable/final_logo"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Check Your Message and Enter Otp"
+                android:id="@+id/title"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_5"
+                android:textSize="18sp"
+                android:textColor="@color/md_black_1000"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+<ImageView
+    android:layout_width="100dp"
+    android:src="@drawable/download2"
+    android:layout_weight="1"
+    android:background="@color/colorAccent"
+    android:id="@+id/install"
+    android:layout_height="match_parent" />
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fe6613</color>
+    <color name="colorPrimaryDark">#383639</color>
+    <color name="colorAccent">#ffda27</color>
+    <color name="primaryColor">#ffda27</color>
+    <color name="nav_bgcolor">#535353</color>
+    <color name="white">#FFFFFF</color>
+    <color name="genre">#666666</color>
+    <color name="green">#00B000</color>
+    <color name="year">#888888</color>
+    <color name="feed_bg">#d3d6db</color>
+</resources>
